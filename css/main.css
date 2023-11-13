@@ -96,3 +96,23 @@
   from {opacity: .5}
   to {opacity: 2}
 }
+
+.store-grid {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(5, 20%);
+  grid-template-areas: 
+  "filter product product product product"
+  "filter product product product product";
+}
+
+img {
+  max-width: 100%;
+}
+
+.store-filters {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  
+}
