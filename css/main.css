@@ -106,6 +106,37 @@
   grid-template-rows: repeat(2,1fr);
   grid-gap: 50px;
 }
+.main-container {
+  display: grid;
+}
+#welcome-banner {
+  margin-top: 50px;
+  padding-top: 20;
+  background-color: #3A0052;
+  height: 300px;
+  width: 900px;
+  justify-self: center;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  padding-left: 130px;
+  color: white;
+}
+
+.banner p {
+  font-size: 1.5em;
+  padding-left:20px;
+  padding-right: 20px;
+}
+
+.banner-checkout h1{
+  padding-left: 300px;
+}
+
+.checkout-container {
+  background-color: white;
+}
 
 .checkout-grid {
 
@@ -128,10 +159,18 @@
 .mostPopular {
   background-color: white;
   /* display: flex; */
+  position: relative;
 }
 
 .popular-images {
   object-fit: contain;
+  margin-bottom: auto;
+}
+
+.popular-images img {
+  /* position: absolute; */
+  left: 0;
+  bottom: 0;
 }
 
 #donuts {
@@ -211,9 +250,9 @@ body {
   aspect-ratio: 1;
 }
 
-.products {
+/* .products {
   background-color: #72009F;
-}
+} */
 
 .product-button {
   position: absolute;
@@ -221,35 +260,11 @@ body {
   padding: 10px 20px;
   margin: 10px, 20px;
   margin-top: 30px;
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%); */
 }
 .product-bottom {
   padding: 2em;
-  /* display: flex; */
 }
-/* .image-fit img {
-  width: 300px;
-  height: 300px;
-  aspect-ratio: 1;
-} */
-/* .store-images {
-width: 50%;
-object-fit: fill;
-height: 300px;
-} */
 
-/* .cro {
-  object-fit: contain;
-} */
-
-/* .store-images {
-  overflow: hidden;
-} */
-/* .store-images img {
-  object-fit: contain;
-  /* max-height: 200px; */
-} */
 
 .bakery-goods {
   background-color: white;
@@ -289,44 +304,48 @@ footer a, p {
   padding: 50px;
 
 }
-/* #croissants {
-  background-color: white;
-
-}
-
-#cookies {
-  background-color: white;
-
-}
-
-#cupcakes {
+.products {
   background-color: white;
 }
 
-#macarons {
-  background-color: white;
-} */
+.products:hover {
+  /* border-radius: 50%; */
+  /* box-shadow:
+    -10px 0 80px #f44336,
+    10px 0 80px #f44336; */
+  animation-name: Pulse;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  transition-timing-function: ease-in-out;
+}
 
+@keyframes Pulse {
+  0% {
+    transform: scale(1)
+  }
+  50% {
+    transform: scale(1.05)
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
 .slidecontainer {
-  width: 100%; /* Width of the outside container */
+  width: 100%; 
 }
-
-/* The slider itself */
 .slider {
-  -webkit-appearance: none;  /* Override default CSS styles */
+  -webkit-appearance: none;  
   appearance: none;
-  width: 100%; /* Full-width */
-  height: 25px; /* Specified height */
-  background: #d3d3d3; /* Grey background */
-  outline: none; /* Remove outline */
-  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  width: 100%; 
+  height: 15px; 
+  background: greenyellow;
+  opacity: 0.7; 
+  -webkit-transition: .2s; 
   transition: opacity .2s;
 }
 
-/* Mouse-over effects */
 .slider:hover {
-  opacity: 1; /* Fully shown on mouse-over */
+  opacity: 1; 
 }
 
