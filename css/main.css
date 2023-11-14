@@ -130,15 +130,15 @@
   padding-right: 20px;
 }
 
-.banner-checkout h1{
+.banneer-about h1{
   padding-left: 300px;
 }
 
-.checkout-container {
+.about-container {
   background-color: white;
 }
 
-.checkout-grid {
+.about-grid {
 
   display: grid;
   grid-template-columns: 1fr;
@@ -348,4 +348,44 @@ footer a, p {
 .slider:hover {
   opacity: 1; 
 }
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  "about contact";
+}
 
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 800px;
+  grid-template-areas: 
+  "about contact";
+}
+
+.about {
+  grid-column: 1 / 2;
+  padding: 50px;
+  /* grid-area: "about"; */
+
+}
+
+.contact {
+  grid-column: 2 / 3;
+  padding: 50px;
+  /* grid-area: "contact"; */
+
+}
+
+
+.about P {
+  color: black;
+}
+
+.message-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100%;
+}
