@@ -99,7 +99,8 @@
 .tart-logo {
   max-width: 150px;
 }
-.home-grid {
+
+#home-grid {
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-template-rows: repeat(2,1fr);
@@ -122,6 +123,27 @@
   grid-template-areas: 
   "filter product product product product"
   "filter product product product product";
+}
+
+.mostPopular {
+  background-color: white;
+  /* display: flex; */
+}
+
+.popular-images {
+  object-fit: contain;
+}
+
+#donuts {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  padding: 30px;
+}
+
+#cinnaroll {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  padding: 30px;
 }
 
 body {
