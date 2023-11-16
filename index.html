@@ -4,178 +4,172 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A Fresh Tart</title>
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
-  
 </head>
 
 <body>
-  <div class="skiplinks">
-    <ul role="list" class="skip-links">
-      <li role="listitem"><a href="#nav" aria-label="Skip to the main navigation">Skip to main nav</a></li>
-      <li role="listitem"><a href="#main" aria-label="Skip to the main content">Skip to main content</a></li>
-  </ul>
-
-  </div>
-  <header>
-    <div class="tart-logo">
-      <img src="images/AFT-logo.png" alt="A green and black layered outline of a citrus.">
-      
-    </div> 
-    <!-- closes logo div -->
-    <img src="images/fresh-tart-text.png" alt="A Fresh Tart in Green text">
-
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="store.html">Treats</a>
-      <a href="#">Blog</a>
-      <a href="about.html">Contact</a>
-
-      <!-- perhaps this socials bit should be outside the nav? -->
-      <ul class="socials">
-
-      </ul> 
-    </nav>
-
-  </header>
-  
-  <main>
-    <div class="main-container">
-    <div id="welcome-banner">
-      <section class="banner">
-        <h1>It's Time For A Fresh Tart</h1>
-        <p>We're expanding! Introducing our brand new Bake It Yourself Pastries! Frozen and shipped to you, anywhere. Now everyone can have a taste without leaving the comfort of your home.
-        I hope you love them as much as we do!
-        </p>
-      </section>
-    </div>
-    <!-- div closes banner -->
-  </div>
-  <!-- main container -->
-
-    <div id="home-grid">
-      <!-- display as a grid  -->
-      <div class="mostPopular" id="donuts">
-        <div class="popular-text">
-          <h3>
-            A Dozen Donuts
-          </h3>
-
-          <h2>
-            Try our delicious homemade sour cream donuts today. We have tons of flavours for your to choose from!
-
-          </h2>
-
-          <p>
-            Click here to check out all the flavours we offer!            
-          </p>
-        </div>
-
-          <div class="popular-images">
-            <img src="images/aneta-voborilova-c8ovzYe3z0s-unsplash.jpg" alt="box of donuts">
-    
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Bakery Name</title>
+    <link rel="stylesheet" href="css/reset.css"> <!-- Link to your CSS file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="tartheader">
+      <!-- Responsive Navigation -->
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-lg">
+            <a class="navbar-brand" href="#home">
+              <img class="brand-logo" src="images/AFT-logo-150_x_150.png" alt="cirtus logo">
+              <img class="brand-text" src="images/a-fresh-tart-text-312_x_104.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-light active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="store.html">Store</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#treats">Treats</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="contact.html">Contact</a>
+                </li>
+              </ul>
+                </button>
+              </form>
+            </div>
           </div>
+        </nav>
+      </header>
 
+    <!-- Main Content -->
+    <main>
 
-      </div>
-      <!-- closes most popular 1 -->
+        <!-- Container with max width of 75% -->
+        <div class="container">
 
-      <div class="mostPopular" id="cinnaroll">
-        <div class="popular-text">
-          <h3>
-            A Dozen Cinnamon Rolls
+            <!-- Banner Section -->
+            <section class="banner bg-opacity-75">
+                <div class="banner-text">
+                    <h1>It's Time For A Fresh Tart!</h1>
+                    <p>We're expanding! Introducing our brand new Bake It Yourself Pastries! Frozen and shipped to you, anywhere. Now everyone can have a taste without leaving the comfort of your home. I hope you love them as much as we do!</p>
+                    <h2>Check out our recipes down below.</h2>
+                </div>
+            </section>
 
-          </h3>
+            <!-- Carousel Section -->
+            <!-- <section class="carousel">
+                <div class="carousel-inner">
+                    <img src="image1.jpg" alt="Image 1">
+                    <img src="image2.jpg" alt="Image 2">
+                    <img src="image3.jpg" alt="Image 3">
+                    <img src="image4.jpg" alt="Image 4">
+                    <img src="image5.jpg" alt="Image 5">
+                </div>
+            </section> -->
+                <!-- Add your carousel code here -->
+            <!-- </section> -->
 
-          <h2>
-            Try our delicious homemade brown sugar cinnamon rolls today. We have tons of flavours for your to choose from!
+            <!-- Grid Section -->
+            <section class="home-grid">
 
-          </h2>
+                <div class="grid-item">
+                    <div class="product-info">
+                        <h1>Donuts</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi et est delectus sed aut. Iure neque recusandae nostrum impedit.</p>
+                        <div class="hidden">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi et est delectus sed aut. Iure neque recusandae nostrum impedit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed atque quos molestiae totam a repudiandae expedita laboriosam incidunt dolores ipsum vitae in esse modi pariatur voluptates, eum, nam odit nobis.</p>
+                          <button class="recipe">Get The Recipe!</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-image">
+                      <img src="images/bakery-images-square/donutsbox.jpg" alt="a box of donuts">
+                    </div>
+                    
+                </div> <!--closes grid item-->
 
-          <p>
-            Click here to check out all the flavours we offer! 
-            
-          </p>
-        </div>
+                <div class="grid-item">
+                  <div class="product-info">
+                      <h1>Cinnamon Buns</h1>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi et est delectus sed aut. Iure neque recusandae nostrum impedit.</p>
+                      <div class="hidden">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi et est delectus sed aut. Iure neque recusandae nostrum impedit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed atque quos molestiae totam a repudiandae expedita laboriosam incidunt dolores ipsum vitae in esse modi pariatur voluptates, eum, nam odit nobis.</p>
+                        <button class="recipe">Get The Recipe!</button>
+                      </div>
+                  </div>
+                  <div class="product-image">
+                    <img src="images/bakery-images-square/cinna.jpg" alt="a dozen cinnamon buns">
+                  </div>
+                  
+              </div> <!--closes grid item-->
 
-        <div class="popular-images">
-          <img src="images/otto-norin-uG3Vu5TXKxE-unsplash.jpg" alt="">
+              <div class="grid-item">
+                <div class="product-info">
+                    <h1>Cupcakes</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi et est delectus sed aut. Iure neque recusandae nostrum impedit.</p>
+                    <div class="hidden">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi et est delectus sed aut. Iure neque recusandae nostrum impedit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed atque quos molestiae totam a repudiandae expedita laboriosam incidunt dolores ipsum vitae in esse modi pariatur voluptates, eum, nam odit nobis.</p>
+                      <button class="recipe">Get The Recipe!</button>
+                    </div>
+                </div>
+                <div class="product-image">
+                  <img src="images/bakery-images-square/cupcakes.jpg" alt="caramel carrot cupcake with creamcheese icing">
+                </div>
+                
+            </div> <!--closes grid item-->
 
-        </div>
+            <div class="grid-item">
+              <div class="product-info">
+                  <h1>Macarons</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi et est delectus sed aut. Iure neque recusandae nostrum impedit.</p>
+                  <div class="hidden">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi et est delectus sed aut. Iure neque recusandae nostrum impedit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed atque quos molestiae totam a repudiandae expedita laboriosam incidunt dolores ipsum vitae in esse modi pariatur voluptates, eum, nam odit nobis.</p>
+                    <button class="recipe">Get The Recipe!</button>
+                  </div>
+              </div>
+              <div class="product-image">
+                <img src="images/bakery-images-square/macarons.jpg" alt="three colorful macarons stacked on top of each other">
+              </div>
+              
+            </div> <!--closes grid item-->
+            </section>
 
-        
+        </div> <!-- End of Container -->
 
-      </div>
-      <!-- closes most popular 2 -->
-      <div class="mostPopular">
-        <h3>
-          Strawberry Cheesecake
+    </main>
 
-        </h3>
-        Try our delicious homemade cheesecakes today. We have tons of flavours for your to choose from!
+    <!-- Footer Section -->
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="treats.html">Treats</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p>&copy; A Fresh Tart 2023. All rights reserved.</p>
+    </footer>
 
-        <h2>
-
-        </h2>
-
-        <p>
-          Click here to check out all the flavours we offer!           
-        </p>
-
-        <img src="images/julia-peretiatko-oXfOK1ymtPU-unsplash.jpg" alt="">
-
-      </div>
-      <!-- closes most popular 3 -->
-      <div class="mostPopular">
-        <h3>
-          Madeleines
-
-        </h3>
-
-        <h2>
-          Try our delicious homemade madeleines today. We have tons of flavours for your to choose from!
-
-        </h2>
-
-        <p>
-          Click here to check out all the flavours we offer!           
-        </p>
-
-        <img src="images/farhan-shaikh-rVOIf6tc5DU-unsplash.jpg" alt="">
-
-      </div>
-      <!-- closes most popular 4 -->
-
-    </div>
-    <!-- div closes home grid -->
-
-  </main>
-
-  <footer>
-    <div>
-      <div>
-        <ul>
-          <a href="index.html">Home</a>
-          <a href="store.html">Treats</a>
-          <a href="#">Blog</a>
-          <a href="#">Contact</a>
-        </ul>
-      </div>
-      <!-- closes list -->
-
-      <div>
-        <p>
-
-        </p>
-      </div>
-      <nav class="footerNav">
-
-      </nav>
-    </div>
-    <a href="#top" aria-label="Go back to the top">Back to Top</a>
-
-    &copy; A Fresh Tart 2023. All rights reserved.
-
-  </footer>
 </body>
+</html>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
 </html>

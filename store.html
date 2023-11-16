@@ -4,258 +4,160 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A Fresh Tart</title>
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <div class="skiplinks">
-    <ul role="list" class="skip-links">
-      <li role="listitem"><a href="#nav" aria-label="Skip to the main navigation">Skip to main nav</a></li>
-      <li role="listitem"><a href="#main" aria-label="Skip to the main content">Skip to main content</a></li>
-  </ul>
-
-  </div>
-  <header>
-    <div class="tart-logo">
-      <img src="images/AFT-logo.png" alt="A green and black layered outline of a citrus.">
-    </div> 
-    <!-- closes logo div -->
-    <img class="tart-text" src="images/fresh-tart-text.png" alt="A Fresh Tart in Green text">
-
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="store.html">Treats</a>
-      <a href="#">Blog</a>
-      <a href="about.html">Contact</a>
-
-      <!-- perhaps this socials bit should be outside the nav? -->
-      <ul class="socials">
-
-      </ul> 
-    </nav>
-
-  </header>
-
-  <main>
-
-    <!-- background image -->
-
-    <!-- store grid -->
-
-    <div class="store-grid">
-      <div class="store-filters">
-        <div class="store-filters-container">
-          <div class="filter-heading">
-            <h2>Filter</h2>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Bakery Name</title>
+    <link rel="stylesheet" href="css/reset.css"> <!-- Link to your CSS file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="tartheader">
+      <!-- Responsive Navigation -->
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-lg">
+            <a class="navbar-brand" href="#home">
+              <img class="brand-logo" src="images/AFT-logo-150_x_150.png" alt="cirtus logo">
+              <img class="brand-text" src="images/a-fresh-tart-text-312_x_104.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-light active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#store.html">Store</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#treats">Treats</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#contact.html">Contact</a>
+                </li>
+              </ul>
+                </button>
+              </form>
+            </div>
           </div>
-          <div class="searchbar">
-            <input type="text" placeholder="Search..">
-          </div>
-          <div class="threebuttons">
-            <button>Breakfast</button>
-            <button>Lunch</button>
-            <button>Dinner</button>
-          </div>
-          <div class="sliderbar">
-            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-          </div>
-        </div>
-        
+        </nav>
+      </header>
 
-      </div>
-      <!-- filter div -->
-      <!-- retrying div containers -->
+    <!-- Main Content -->
+    <main>
 
-      <div class="products">
-        <div class="product-img">
-          <img src="images/conor-brown-sqkXyyj4WdE-unsplash.jpg" alt="">
-        </div>
-        <div class="product-button">
-          <button>Add To Cart</button>
-        </div>
-        <div class="product-bottom">
-          <p>#</p>
-          <label for="quantity">Quantity:</label>
-          <input type="number" id="quantity" name="quantity" min="1" max="24">
-        </div>
-        <div>
+        <!-- Container with max width of 75% -->
+        <div class="container">
 
-        </div>
-      </div>
-      <!-- end of product 1 -->
+            <!-- Banner Section -->
+            <section class="banner bg-opacity-75">
+                <div class="banner-text">
+                    <h1>Store</h1>
+                </div>
+            </section>
 
-      <div class="products">
-        <div class="product-img">
-          <img src="images/farhan-shaikh-rVOIf6tc5DU-unsplash.jpg" alt="">
-        </div>
-        <div class="product-button">
-          <button>Add To Cart</button>
-        </div>
-        <div class="product-bottom">
-          <p>#</p>
-          <label for="quantity">Quantity:</label>
-          <input type="number" id="quantity" name="quantity" min="1" max="24">
-        </div>
-        <div>
+            <!-- Grid Section -->
+            <section class="store-grid">
 
-        </div>
-      </div>
-      <!-- end of prudct 2 -->
+              <div class="filter">
+                <input class="form-control text-bg-light rounded-0" type="search" placeholder="Search" aria-label="Search">
+              </div>
 
-      <div class="products">
-        <div class="product-img">
-          <img src="images/lore-schodts-FIxdY7jOBus-unsplash.jpg" alt="">
-        </div>
-        <div class="product-button">
-          <button>Add To Cart</button>
-        </div>
-        <div class="product-bottom">
-          <p>#</p>
-          <label for="quantity">Quantity:</label>
-          <input type="number" id="quantity" name="quantity" min="1" max="24">
-        </div>
-        <div>
+                <div class="grid-buy"> <!--square image, with a button floating above it-->
+                  <div class="product-image">
+                    <!-- IMPORTANT remember to use SRCSET for responsive images of the products -->
+                    <img src="images/bakery-images-square/donutsbox.jpg" alt="a box of donuts">
+                  </div>
+                  <button class="addcart">Add To Cart</button>
+                    
+                    
+                </div> <!--closes grid item-->
 
-        </div>
-      </div>
-      <!-- end of product 3 -->
+                <div class="grid-buy"> <!--square image, with a button floating above it-->
+                  <div class="product-image">
+                    <!-- IMPORTANT remember to use SRCSET for responsive images of the products -->
+                    <img src="images/bakery-images-square/cake.jpg" alt="a box of donuts">
+                  </div>
+                  <button class="addcart">Add To Cart</button>
+                    
+                    
+                </div> <!--closes grid item-->
 
-      <div class="products">
-        <div class="product-img">
-          <img src="images/heather-barnes-WbZesfqwR-A-unsplash.jpg" alt="">
-        </div>
-        <div class="product-button">
-          <button>Add To Cart</button>
-        </div>
-        <div class="product-bottom">
-          <p>#</p>
-          <label for="quantity">Quantity:</label>
-          <input type="number" id="quantity" name="quantity" min="1" max="24">
-        </div>
-        <div>
+                <div class="grid-buy"> <!--square image, with a button floating above it-->
+                  <div class="product-image">
+                    <!-- IMPORTANT remember to use SRCSET for responsive images of the products -->
+                    <img src="images/bakery-images-square/cupcakes.jpg" alt="a box of donuts">
+                  </div>
+                  <button class="addcart">Add To Cart</button>
+                    
+                    
+                </div> <!--closes grid item-->
 
-        </div>
-      </div>
-      <!-- end of product 4 -->
-      <div class="products">
-        <div class="product-img">
-          <img src="images/scott-eckersley-bXP4ijL9BrY-unsplash.jpg" alt="">
-        </div>
-        <div class="product-button">
-          <button>Add To Cart</button>
-        </div>
-        <div class="product-bottom">
-          <p>#</p>
-          <label for="quantity">Quantity:</label>
-          <input type="number" id="quantity" name="quantity" min="1" max="24">
-        </div>
-        <div>
+                <div class="grid-buy"> <!--square image, with a button floating above it-->
+                  <div class="product-image">
+                    <!-- IMPORTANT remember to use SRCSET for responsive images of the products -->
+                    <img src="images/bakery-images-square/macarons.jpg" alt="a box of donuts">
+                  </div>
+                  <button class="addcart">Add To Cart</button>
+                    
+                    
+                </div> <!--closes grid item-->
 
-        </div>
-      </div>
-      <!-- end of product 5 -->
+                <div class="grid-buy"> <!--square image, with a button floating above it-->
+                  <div class="product-image">
+                    <!-- IMPORTANT remember to use SRCSET for responsive images of the products -->
+                    <img src="images/bakery-images-square/smores.jpg" alt="a box of donuts">
+                  </div>
+                  <button class="addcart">Add To Cart</button>
+                    
+                    
+                </div> <!--closes grid item-->
 
-      <div class="products">
-        <div class="product-img">
-          <img src="images/gaby-yerden-2Bs7Ihhzubs-unsplash.jpg" alt="">
-        </div>
-        <div class="product-button">
-          <button>Add To Cart</button>
-        </div>
-        <div class="product-bottom">
-          <p>#</p>
-          <label for="quantity">Quantity:</label>
-          <input type="number" id="quantity" name="quantity" min="1" max="24">
-        </div>
-        <div>
+                <div class="grid-buy"> <!--square image, with a button floating above it-->
+                  <div class="product-image">
+                    <!-- IMPORTANT remember to use SRCSET for responsive images of the products -->
+                    <img src="images/bakery-images-square/empanada.jpg" alt="a box of donuts">
+                  </div>
+                  <button class="addcart">Add To Cart</button>
+                    
+                    
+                </div> <!--closes grid item-->
+            </section>
 
-        </div>
-      </div>
-      <!-- end of product 6 -->
+        </div> <!-- End of Container -->
 
-      <div class="products">
-        <div class="product-img">
-          <img src="images/otto-norin-uG3Vu5TXKxE-unsplash.jpg" alt="">
-        </div>
-        <div class="product-button">
-          <button>Add To Cart</button>
-        </div>
-        <div class="product-bottom">
-          <p>#</p>
-          <label for="quantity">Quantity:</label>
-          <input type="number" id="quantity" name="quantity" min="1" max="24">
-        </div>
-        <div>
+    </main>
 
-        </div>
-      </div>
-      <!-- end of product 7 -->
+    <!-- Footer Section -->
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="treats.html">Treats</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p>&copy; A Fresh Tart 2023. All rights reserved.</p>
+    </footer>
 
-      <div class="products">
-        <div class="product-img">
-          <img src="images/julia-peretiatko-oXfOK1ymtPU-unsplash.jpg" alt="">
-        </div>
-        <div class="product-button">
-          <button>Add To Cart</button>
-        </div>
-        <div class="product-bottom">
-          <p>#</p>
-          <label for="quantity">Quantity:</label>
-          <input type="number" id="quantity" name="quantity" min="1" max="24">
-        </div>
-        <div>
-
-        </div>
-      </div>
-      <!-- end of product 8 -->
-
-
-
-
-
-
-
-
-
-
-      <!-- end of retry -->
-
-      
-
-
-
-    </div>
-    <!-- div for store grid -->
-
-  </main>
-
-  <footer>
-    <div>
-      <div>
-        <ul>
-          <a href="index.html">Home</a>
-          <a href="store.html">Treats</a>
-          <a href="#">Blog</a>
-          <a href="#">Contact</a>
-        </ul>
-      </div>
-      <!-- closes list -->
-
-      <div>
-        <p>
-
-        </p>
-      </div>
-      <nav class="footerNav">
-
-      </nav>
-    </div>
-    <a href="#top" aria-label="Go back to the top">Back to Top</a>
-
-    &copy; A Fresh Tart 2023. All rights reserved.
-
-  </footer>
-  
 </body>
+</html>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
 </html>

@@ -1,219 +1,298 @@
-* {
-  box-sizing: border-box;
-}
-.tart-logo {
-  max-width: 150px;
-}
+.skip-link {     color: #72009F; /* same color as background */  
+  background-color: #72009F; width: 100%;   text-decoration: none;  }  .SkipNav:active, .SkipNav:focus {     /* Becomes visible & underlined         when user tabs to it.        :active pseudo-class necessary for IE        :focus pseudo-class necessary for Mozilla      */     color: #0000FF;      text-decoration: underline;  }
 
-#home-grid {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(2,1fr);
-  grid-gap: 50px;
-}
-.main-container {
-  display: grid;
-}
-#welcome-banner {
-  margin-top: 50px;
-  padding-top: 20;
-  background-color: #3A0052;
-  height: 300px;
-  width: 900px;
-  justify-self: center;
-}
 
-.banner h1 {
-  font-size: 3rem;
-  padding-left: 130px;
-  color: white;
-}
-
-.banner p {
-  font-size: 1.5em;
-  padding-left:20px;
-  padding-right: 20px;
-}
-
-.banneer-about h1{
-  padding-left: 300px;
-}
-
-.about-container {
-  background-color: white;
-}
-
-.about-grid {
-
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2,1fr);
-}
-
-.store-grid {
-  padding: 5rem;
-  display: grid;
-  grid-gap: 30px;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(5, 20%);
-  grid-template-areas: 
-  "filter product product product product"
-  "filter product product product product";
-}
-
-.mostPopular {
-  background-color: white;
-  /* display: flex; */
-  position: relative;
-}
-
-.popular-images {
-  object-fit: contain;
-  margin-bottom: auto;
-}
-
-.popular-images img {
-  /* position: absolute; */
-  left: 0;
-  bottom: 0;
-}
-
-#donuts {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  padding: 30px;
-}
-
-#cinnaroll {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  padding: 30px;
-}
+/* Reset some default margin and padding */
+/* body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+} */
 
 body {
-  margin: 0;
+  font-family: 'Arial', sans-serif; /* Change the font family as needed */
 }
 
+html {
+  background-color: #72009F;
+}
+/* Header styles */
 header {
   background-color: #72009F;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: end;
-  justify-items: end;
-}
-
-nav a{
-  font-size: 4rem;
-  margin: 30px;
-  color: white;
-  
-
-}
-img {
-  max-width: 100%;
-  /* object-fit: contain; */
-}
-
-.tart-text {
-  max-width: 450px;
-  justify-content: start;
-  margin-right: 600px;
-}
-
-body {
-  background-image: url(../images/toa-heftiba-S1Z_Cudra0k-unsplash.jpg);
+main {
+  /* background-color: white; */
+  background: white url(../images/toa-heftiba-S1Z_Cudra0k-unsplash.jpg) no-repeat center;
   background-size: cover;
 }
 
-.store-filters {
-  grid-column: 1 / 2;
-  grid-row: 1 / 3;
-  background-color: white;
-  
-}
-/* .image-fit {
-  object-fit: contain;
-}
-.image-fit img {
-  width: 100%;
-} */
-
-.product-img {
-  max-width: 524px;
-  max-height: 524px;
-  object-fit: contain;
-  position: relative;
-}
-.product-img img {
-  aspect-ratio: 1;
-}
-
-/* .products {
+footer {
   background-color: #72009F;
-} */
-
-.product-button {
-  position: absolute;
-  /* top: 50%; */
-  padding: 10px 20px;
-  margin: 10px, 20px;
-  margin-top: 30px;
-}
-.product-bottom {
-  padding: 2em;
 }
 
-
-.bakery-goods {
-  background-color: white;
+footer p {
+  text-align: center;
+  padding-bottom: 0.5em;
 }
 
-footer{
-  background-color: #72009F;
+footer ul {
+  padding-top: 0.5em;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #FFFFFF; /* Header link color */
+  font-size: 30px;
+}
+
+/* Main content styles */
+.container {
+  max-width: 75%;
+  margin: 0 auto;
+  /* background-color: #F0F1EC; */
+  padding: 20px;
+  /* background: white url(../images/toa-heftiba-S1Z_Cudra0k-unsplash.jpg) no-repeat center;
+  background-size: cover; */
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
 }
 
-footer a, p {
+/* Banner styles */
+.banner {
+  background-color: #3A0052; opacity: 66%;
+  /* position: relative; */
+}
+
+.banner h1, h2, p {
+  opacity: 100%;
   color: white;
 }
 
-.store-filters-container {
+.banner-text {
+  opacity: 100%;
+  padding: 2em;
+  /* width: 100%;
+  height: auto; */
+}
+
+.banner-text h1, h2 {
+  text-align: center;
+}
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Keyframe animations for the carousel */
+@keyframes carousel {
+  0%, 100% {
+      transform: translateX(0);
+  }
+  20% {
+      transform: translateX(0);
+  }
+  25% {
+      transform: translateX(-100%);
+  }
+  45% {
+      transform: translateX(-100%);
+  }
+  50% {
+      transform: translateX(-200%);
+  }
+  70% {
+      transform: translateX(-200%);
+  }
+  75% {
+      transform: translateX(-300%);
+  }
+  95% {
+      transform: translateX(-300%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+/* Individual image styles */
+.carousel img {
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+/* Apply the animation to the carousel */
+.carousel-inner {
   display: flex;
-  flex-direction: column;
+  animation: carousel 15s infinite; /* Adjust the duration as needed */
+}
+
+/* Hamburger Menu CSS
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif; 
+  Change the font family as needed
+}
+
+Hamburger menu button styles
+.menu-btn {
+  display: none;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 6px 0;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+Navigation menu styles
+.nav-menu {
+  display: flex;
   justify-content: space-around;
+  background-color: #333;
+  padding: 15px;
 }
 
-.filter-heading {
-  padding: 50px;
-}
-.searchbar {
-  padding: 50px;
-
+.nav-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.threebuttons {
-  padding: 50px;
-
+.nav-menu li {
+  display: inline;
 }
 
-.slidebar {
-  padding: 50px;
-
-}
-.products {
-  background-color: white;
+.nav-menu a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
 }
 
-.products:hover {
+Media query to make the menu responsive */
+
+/* @media screen and (max-width: 768px) {
+  .menu-btn {
+      display: block;
+  }
+
+  .menu-toggle:checked + .menu-btn .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .menu-toggle:checked + .menu-btn .bar:nth-child(2) {
+      opacity: 0;
+  }
+
+  .menu-toggle:checked + .menu-btn .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .nav-menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .menu-toggle:checked + .menu-btn + .nav-menu {
+      display: flex;
+  }
+} */
+
+.brand-logo img{
+  width: 100px;
+}
+.navbar {
+  background-color: #72009F;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.home-grid {
+  margin: 2em;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+  grid-gap: 1em;
+}
+
+.hidden {
+  display: none;
+}
+
+.grid-item {
+  background-color: #F1F9FF;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.grid-item h1 + p {
+  color: black;
+}
+
+.product-info {
+  padding: 1em;
+}
+.product-image {
+  object-fit: contain;
+}
+
+.product-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.store-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 2em;
+  /* grid-template-rows: repeat(4,1fr); */
+  /* grid-template-areas:
+  "filter filter"
+  "item1 item 2"
+  "item3 item 4"
+  "item5 item6"; */
+}
+
+.filter {
+  color: #3A0052;
+  grid-column: 1 / 3;
+  padding: 2em;
+}
+
+.addcart {
+  font-size: 2em;
+  position: relative;
+  top: -150px;
+  left: 150px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+
+.grid-buy:hover {
   /* border-radius: 50%; */
   /* box-shadow:
     -10px 0 80px #f44336,
@@ -236,72 +315,136 @@ footer a, p {
   }
 }
 
-.slidecontainer {
-  width: 100%; 
-}
-.slider {
-  -webkit-appearance: none;  
-  appearance: none;
-  width: 100%; 
-  height: 15px; 
-  background: greenyellow;
-  opacity: 0.7; 
-  -webkit-transition: .2s; 
-  transition: opacity .2s;
-}
-
-.slider:hover {
-  opacity: 1; 
-}
-.about-grid {
+.contact-grid {
+  margin-top: 3em;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-template-areas: 
-  "about contact";
+  grid-auto-rows: auto;
+  grid-template-columns: 1fr;
+  /* grid-template-rows: repeat(3,1fr); */
+  grid-gap: 3em;
 }
 
-.about-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 800px;
-  grid-template-areas: 
-  "about contact";
+.about-us {
+  /* display: flex; */
+  /* height: 350px; */
+  background-color: rgb(235, 238, 247);  
+  padding: 2em;
 }
 
-.about {
-  grid-column: 1 / 2;
-  padding: 50px;
-  /* grid-area: "about"; */
+/* .about-content {
+  height: auto;
+} */
 
+/* deletes hours of operation content */
+/* .hours-wrapper {
+  height: 150px;
+  background-color: rgb(235, 238, 247);  
+  padding: 2em;
+  margin-bottom: 2em;
 }
 
-.contact {
-  grid-column: 2 / 3;
-  padding: 50px;
-  /* grid-area: "contact"; */
-
+.hours-wrapper h2 {
+  color: black;
 }
+.hours-table {
+  margin-bottom: 2em;
+  padding: 2em;
+} */
 
-
-.about P {
+.about-us p {
   color: black;
 }
 
-.message-wrapper {
+.contact-us {
+  background-color: rgb(235, 238, 247);
+  padding: 2em;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  height: 100%;
+  justify-items: space-around;
+}
+
+.contact-us h2 {
+  color: black;
+}
+
+#fname {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#email {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#message {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.nav-bar-nav {
+  margin-left: auto;
+}
+.navbar-brand {
+  height: 120px;
+}
+
+.navbar-brand img {
+  height: 100px;
+}
+
+/* .container {
+  background: white;
+  background-size: cover;
+} */
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #1CFF00;
 }
 
 
-@media screen and (min-width: 760px) { 
-  /* I lost all my work and had to restart and forgot to design for mobile first..... */
+@media screen and (min-width: 1200px) {
 
-}
+  .store-grid {
+    margin: 2em;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+  }
+  .filter {
+    display: none;
+  }
 
-@media screen and (min-width: 1200px) { 
+  .addcart {
+    font-size: small;
+    left: 75px;
+    /* bottom: ; */
+    top: -55px
 
-}
+  }
 
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .home-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+  }
+
+  .hidden {
+    display: block;
+
+  }
+
+  .hidden p, button {
+    color: black;
+  }
+  }
